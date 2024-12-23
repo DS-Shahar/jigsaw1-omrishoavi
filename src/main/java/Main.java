@@ -19,26 +19,6 @@ public class Main {
 		return newH.getNext();
 	}
 
-	public static Node<Integer> balbalas(Node<Integer> h) {
-		Node<Integer> shellyGi= h;
-		Node<Integer> shellySha = h;
-		Node<Integer>kikstar= shellyGi.getNext();
-		while (h.getNext()!=null) {
-			while(kikstar!=null ) {
-				if(kikstar.getValue()==h.getValue()) {
-					shellySha.setNext(kikstar.getNext());
-				}
-				shellySha=shellySha.getNext();
-				kikstar =kikstar.getNext();
-			}
-			h.getNext();
-			shellySha=h;
-			kikstar=h.getNext();
-
-		}
-		return shellyGi;
-	}
-
 	public static Node<Integer> delDoubles(Node<Integer> head) {
 	    Node<Integer> current1 = head;
 
